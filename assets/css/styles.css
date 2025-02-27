@@ -1,0 +1,425 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #45a049;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+#download {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+button {
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+nav {
+    background: #45a049;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333333;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#social-media ul li a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#social-media ul li a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+#social-media ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#social-media ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#social-media ul li span {
+    color: #333;
+}
+
+#social-media ul li img {
+    margin-right: 5px;
+    transition: transform 0.2s;
+}
+
+#social-media ul li a:hover img {
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #45a049, #357a38);
+    color: white;
+}
+
+#hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.primary-button, .secondary-button {
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.primary-button {
+    background: #ffffff;
+    color: #45a049;
+}
+
+.secondary-button {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.primary-button:hover, .secondary-button:hover {
+    transform: scale(1.05);
+}
+
+/* Features Section */
+#features {
+    padding: 60px 20px;
+    background: #ffffff;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 60px 20px;
+    background: #f9f9f9;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+blockquote {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+blockquote p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+cite {
+    color: #666;
+}
+
+/* Portfolio Specific Styles */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-link {
+    color: #45a049;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.skill-category {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.skill-category ul {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.skill-category li {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+#about-preview {
+    background: white;
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Projects Page Specific Styles */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 20px;
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.project-tech {
+    margin: 15px 0;
+}
+
+.tech-tag {
+    background: #45a049;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#projects-showcase h2 {
+    text-align: center;
+    margin: 40px 0;
+    color: #333;
+}
+
+/* Math Page Specific Styles */
+.math-page header {
+    background: #003b6f;
+}
+
+.math-page nav {
+    background: #003b6f;
+}
+
+.math-page #hero {
+    background: linear-gradient(to bottom, #003b6f, #002847);
+}
+
+.math-page .primary-button {
+    background: #ffffff;
+    color: #003b6f;
+}
+
+.math-page .feature-card:hover {
+    border-left: 4px solid #003b6f;
+}
+
+.math-page .tech-tag {
+    background: #003b6f;
+}
+
+.math-page button:hover {
+    background: #003b6f;
+}
+
+.math-page .project-link {
+    color: #003b6f;
+}
+
+/* Features Page Specific Styles */
+#detailed-features {
+    padding: 40px 20px;
+    background: #fff;
+}
+
+#detailed-features .feature-card {
+    padding: 30px;
+}
+
+#detailed-features .feature-card ul {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+#detailed-features .feature-card ul li {
+    padding: 8px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+#detailed-features .feature-card ul li:before {
+    content: "•";
+    color: #003b6f;
+    position: absolute;
+    left: 0;
+}
+
+#feature-demo {
+    padding: 60px 20px;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.demo-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#cta {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #003b6f, #002847);
+    color: white;
+}
+
+#cta h2 {
+    margin-bottom: 30px;
+}
+
+/* Feature page CTA button override */
+#cta .secondary-button {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+#cta .secondary-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
